@@ -9,7 +9,7 @@ app.use((request,response,next)=>{
     next();
 });
 
-app.use(bodyparser.json());
+app.use(express.json());
 
 // define a route handler for the default home page
 app.get( "/", ( request, response ) => {
